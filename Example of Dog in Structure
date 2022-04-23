@@ -1,0 +1,16 @@
+#include<stdio.h>
+int main()
+{
+struct dog
+{
+    char name[10];
+    char breed[10];
+    int age;
+}
+d;
+struct dog * ptr;
+ptr=&d;
+printf("enter the dog name,breed and age");
+scanf("%s%s%d",ptr->name,ptr->breed,&ptr->age);
+printf("%s%s%d",ptr->name,ptr->breed,ptr->age);
+}
